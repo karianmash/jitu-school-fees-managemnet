@@ -1,18 +1,13 @@
 .student {
   width: 100%;
   height: auto;
-  padding: 0 0.4rem;
+  padding: 0.5rem 0.4rem;
   margin-bottom: 2rem;
-  background-image: linear-gradient(
-    109.6deg,
-    rgba(5, 84, 94, 1) 16%,
-    #bbb 91.1%
-  );
+  background-image: linear-gradient(109.6deg, rgb(7, 94, 105) 16%, #bbb 91.1%);
 }
 
-.student h5,
-h6 {
-  margin-bottom: 1rem;
+.student h6 {
+  margin: 0.6rem 0;
   font-size: 1.2rem;
 }
 

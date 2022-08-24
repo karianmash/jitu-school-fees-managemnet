@@ -18,6 +18,7 @@ import { AllStudentComponent } from './all-student/all-student.component';
 import { FeeBalancePipe } from './pipes/fee-balance.pipe';
 import { ClassNamePipe } from './pipes/class-name.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { CustomBackgroundColorDirective } from './directives/custom-background-color.directive';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     FeeBalancePipe,
     ClassNamePipe,
     CapitalizePipe,
+    CustomBackgroundColorDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

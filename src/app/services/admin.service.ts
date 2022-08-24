@@ -16,13 +16,13 @@ export class AdminService {
   isLoggedIn =
     JSON.parse(localStorage.getItem('isLoggedIn') as string) || false;
 
-  students: Student[] = [
-    { name: 'Ian Macharia', class: '8', balance: 1250 },
-    { name: 'Amos Mwangi', class: '2', balance: 0 },
-    { name: 'Jane Racheal', class: '6', balance: 960 },
-  ];
+  // students: Student[] = [
+  //   { name: 'Ian Macharia', class: '8', balance: 1250 },
+  //   { name: 'Amos Mwangi', class: '2', balance: 0 },
+  //   { name: 'Jane Racheal', class: '6', balance: 960 },
+  // ];
 
-  // students: Student[] = [];
+  students: Student[] = [];
 
   validateUser(email: string, password: string) {
     if (email === this.email && password === this.password) {
@@ -81,11 +81,10 @@ export class AdminService {
     feeBalance: string
   ) {
     let name = fName + ' ' + lName;
-    let cName = 'Class ' + cNumber;
 
     let student = {
       name,
-      class: cName,
+      class: cNumber,
       balance: parseInt(feeBalance),
     };
 
