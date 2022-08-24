@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class="container">
+  <div class="sidebar">
+    <a routerLink="/all-students" style="text-decoration: none; color: inherit">
+      <div class="card-item" id="all">All students</div>
+    </a>
+
+    <a
+      routerLink="/students-with-balance"
+      style="text-decoration: none; color: inherit"
+    >
+      <div class="card-item" id="with-balance">With balance</div>
+    </a>
+
+    <a
+      routerLink="/students-without-balance"
+      style="text-decoration: none; color: inherit"
+    >
+      <div class="card-item" id="without-balance">Without balance</div>
+    </a>
+
+    <a routerLink="/add-student" style="text-decoration: none; color: inherit">
+      <div class="card-item" id="add-student">Add student</div>
+    </a>
+  </div>
+
+  <div class="main-content">
+    <div class="student-container">
+      <div class="form">
+        <h3>Add Student</h3>
+        <p *ngIf="isEmpty === true">Please fill in all fields!!!</p>
+        <!-- Email -->
+        <div>
+          <label for="">First Name</label>
+          <input type="text" name="first-name" [(ngModel)]="firstName" />
+        </div>
+        <!-- Email -->
+        <div>
+          <label for="">Last Name</label>
+          <input type="text" name="last-name" [(ngModel)]="lastName" />
+        </div>
+        <!-- Email -->
+        <div>
+          <label for="">Class</label>
+          <input type="number" name="class" [(ngModel)]="classNumber" />
+        </div>
+        <p *ngIf="invalidClass === true">Class should be between 1 - 8</p>
+        <!-- Password -->
+        <div>
+          <label for="">Fee Balance</label>
+          <input type="text" name="balance" [(ngModel)]="balance" />
+        </div>
+        <p *ngIf="negativeBalance === true">Balance cannot be negative!!!</p>
+        <!-- Submit btn -->
+        <input type="submit" name="submit" value="Add" (click)="addStudent()" />
+      </div>
+    </div>
+  </div>
+</div>

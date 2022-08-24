@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngIf="show === true">
+    <img src="/assets/logo-jitu.png" style="margin-left: -7rem" />
+  </div>
+
+  <div class="welcome" *ngIf="show === false || undefined">
+    Welcome to TheJitu School
+  </div>
+
+  <div *ngIf="show === true">TheJitu School</div>
+
+  <div class="login" routerLink="/login" *ngIf="show === false || undefined">
+    Login
+  </div>
+
+  <div *ngIf="show === true" (click)="logout()">Logout</div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,89 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: rgb(231, 211, 250);
+}
+.hero-content {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+  color: rgb(4, 57, 82);
+  background: rgba(0, 0, 0, 0.5)
+    url("https://thumbs.dreamstime.com/b/teen-student-leaning-against-wall-reading-book-full-length-profile-shot-teen-student-leaning-against-wall-103128857.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.login-wrapper {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5)
+    url("https://wallpaperaccess.com/full/4893706.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.form {
+  width: 70%;
+  height: auto;
+  margin: 1rem auto 0;
+  padding: 1rem 2rem;
+  color: #fff;
+  /* background-color: rgb(150, 150, 150); */
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(15, 2, 2, 1) 11.2%,
+    rgba(36, 163, 190, 1) 91.1%
+  );
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+p {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.form div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.form div label {
+  width: 25%;
+}
+.form div input {
+  padding-left: 1rem;
+  width: 75%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.form div input:focus {
+  outline: none;
+}
+.form input[type="submit"] {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

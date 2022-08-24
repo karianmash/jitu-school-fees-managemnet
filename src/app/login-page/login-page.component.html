@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="container">
+  <div class="hero-content">Login</div>
+
+  <div class="login-wrapper">
+    <div class="form">
+      <!-- <p>{{errorMessage}}</p> -->
+      <h3>Login Here</h3>
+      <p *ngIf="isLoggedIn === false">Invalid credentials!!!</p>
+      <!-- Email -->
+      <div>
+        <label for="">Email</label>
+        <input type="email" name="email" [(ngModel)]="email" />
+      </div>
+      <!-- Password -->
+      <div>
+        <label for="">Password</label>
+        <input type="password" name="password" [(ngModel)]="password" />
+      </div>
+      <!-- Submit btn -->
+      <input type="submit" name="submit" (click)="validateUser()" />
+    </div>
+  </div>
+</div>

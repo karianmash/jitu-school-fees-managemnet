@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+  <div class="sidebar">
+    <a routerLink="/all-students" style="text-decoration: none; color: inherit">
+      <div class="card-item" id="all">All students</div>
+    </a>
+
+    <a
+      routerLink="/students-with-balance"
+      style="text-decoration: none; color: inherit"
+    >
+      <div class="card-item" id="with-balance">With balance</div>
+    </a>
+
+    <a
+      routerLink="/students-without-balance"
+      style="text-decoration: none; color: inherit"
+    >
+      <div class="card-item" id="without-balance">Without balance</div>
+    </a>
+
+    <a routerLink="/add-student" style="text-decoration: none; color: inherit">
+      <div class="card-item" id="add-student">Add student</div>
+    </a>
+  </div>
+
+  <div class="main-content">
+    <!-- Add student -->
+    <div class="student-fallback">Nothing Here!!!</div>
+  </div>
+</div>

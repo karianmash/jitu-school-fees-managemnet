@@ -1,0 +1,15 @@
+.container {
+  background: rgba(0, 0, 0, 0.1) url("https://wallpaper.dog/large/5556204.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-blend-mode: darken;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 3rem;
+  color: #fff;
+}
