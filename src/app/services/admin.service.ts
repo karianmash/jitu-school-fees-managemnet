@@ -22,7 +22,7 @@ export class AdminService {
   //   { name: 'Jane Racheal', class: '6', balance: 960 },
   // ];
 
-  students: Student[] = [];
+  private students: Student[] = [];
 
   validateUser(email: string, password: string) {
     if (email === this.email && password === this.password) {
