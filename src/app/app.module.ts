@@ -19,6 +19,7 @@ import { FeeBalancePipe } from './pipes/fee-balance.pipe';
 import { ClassNamePipe } from './pipes/class-name.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { CustomBackgroundColorDirective } from './directives/custom-background-color.directive';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CustomBackgroundColorDirective } from './directives/custom-background-c
     ClassNamePipe,
     CapitalizePipe,
     CustomBackgroundColorDirective,
+    ErrorPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

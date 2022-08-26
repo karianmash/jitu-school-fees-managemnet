@@ -1,0 +1,10 @@
+.error-container {
+  background: rgba(0, 0, 0, 0.1)
+    url("https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-1932.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  background-blend-mode: darken;
+}

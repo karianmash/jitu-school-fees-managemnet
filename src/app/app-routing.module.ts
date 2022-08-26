@@ -4,6 +4,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { AllStudentComponent } from './all-student/all-student.component';
 import { ContainerComponent } from './container/container.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { FallbackComponent } from './fallback/fallback.component';
 import { HeroPageComponent } from './hero-page/hero-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -45,6 +46,10 @@ const routes: Routes = [
     path: 'fallback',
     canActivate: [LoginGuardGuard],
     component: FallbackComponent,
+  },
+  {
+    path: '**',
+    component: ErrorPageComponent,
   },
 ];
 
